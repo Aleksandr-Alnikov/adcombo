@@ -1,0 +1,451 @@
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 30px;
+}
+
+.hero__menu {
+    background-color: rgba(149, 100, 170, 0.1);
+    border: 2px solid rgba(149, 100, 170, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hero__menu-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid rgba(149, 100, 170, 0.2);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.hero__menu-image {
+    display: block;
+    border-radius: 100%;
+}
+
+.hero__menu-name {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero__menu-btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #684677;
+    font-size: 10px;
+    color: #fff;
+}
+
+.hero__menu-item:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.hero__menu-link {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    transition: color .1s ease-in-out;
+}
+
+.hero__menu-link:hover {
+    color: #9564AA;
+}
+
+.hero__content {
+    position: relative;
+}
+
+.hero__left-btn {
+    display: none;
+    top: 255px;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.hero__right-btn {
+    display: none;
+    top: 255px;
+    right: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.hero__title {
+    font-size: 40px;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .25);
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(149, 100, 170, 0.2);
+    margin-bottom: 30px;
+}
+
+.hero__timer-wrapper {
+    padding: 13px;
+    background-color: #c15ca1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.hero__timer-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffcf2d;
+    text-shadow: 0 0 5px #fff, 1px 1px 0 #fff, -1px  1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff;
+}
+
+.hero__timer-description {
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero__timer {
+    border-radius: 5px;
+    padding: 5px 20px;
+    height: 56px;
+    background-color: #fff;
+}
+
+#timer {
+    font-size: 40px;
+}
+
+.hero__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.hero__item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    padding: 15px;
+    border: 2px solid #9564aa;
+    border-radius: 10px;
+    background-color: rgba(149, 100, 170, 0.1);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.hero__item:hover {
+    background-color: #9564aa;
+}
+
+.hero__item:hover .hero__price {
+    color: #fff;
+}
+
+.hero__item:hover span {
+    color: #000;
+}
+
+.hero__item:hover button {
+    background-color: #FFCF2D;
+    color: #000;
+}
+
+.hero__item:hover:before {
+    content: 'One time offer!';
+    position: absolute;
+    top: -12px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px 10px 4px 10px;
+    background-color: #ffcf2d;
+}
+
+
+
+.hero__price {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.hero__price-cr {
+    font-size: 8px;
+    padding: 4px 3px;
+    background-color: #FFCF2D;
+    border-radius: 100%;
+}
+
+.hero__btn {
+    border-radius: 5px;
+    padding: 17px 21px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.hero__custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero__custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.hero__custom-check {
+    width: 20px;
+    height: 20px;
+    border: 2px solid  #9564aa;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.hero__custom-checkbox input[type="checkbox"]:checked + .hero__custom-check:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.hero__custom-checkbox input[type="checkbox"]:checked + .hero__custom-check {
+    background-color:  #9564aa;
+}
+
+.hero__privacy-link {
+    color: #9564aa;
+}
+
+.hero__advantages {
+    position: relative;
+    text-align: center;
+    padding: 116px ;
+}
+
+.hero__advantages-item {
+    max-width: 110px;
+    color: #9564aa;
+}
+
+.hero__advantages-item svg circle {
+    transition: opacity .3s ease-in-out, color .3s ease-in-out;
+}
+
+.hero__advantages-item svg circle:hover {
+    color:  #FFCF2D;
+    opacity: 1;
+}
+
+.hero__advantages-item:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.hero__advantages-item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 35%;
+}
+
+.hero__advantages-item:nth-child(3) {
+    position: absolute;
+    top: 38%;
+    left: 25%;
+}
+
+.hero__advantages-item:nth-child(4) {
+    position: absolute;
+    right: 25%;
+    top: 38%;
+}
+
+.hero__advantages-item:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
+
+.hero__advantages-item:nth-child(6) {
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+}
+
+.hero__advantages-text {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #9564aa;
+}
+
+.parallax__img-1 {
+    position: absolute;
+    background-image: url("../img/parralax-1.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: left center;
+    opacity: .8;
+    z-index: -1;
+}
+
+.parallax__img-2 {
+    position: absolute;
+    background-image: url("../img/parallax-2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: -1;
+}
+
+@media (max-width: 1100px) {
+    .hero__timer-title {
+        font-size: 26px;
+    }
+
+    .hero__timer {
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    #timer {
+        font-size: 26px;
+    }
+
+    .hero__advantages-text {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .hero__advantages-item:nth-child(1) {
+        left: 30%;
+    }
+
+    .hero__advantages-item:nth-child(2) {
+        right: 30%;
+    }
+
+    .hero__advantages-item:nth-child(5) {
+        left: 30%;
+    }
+
+    .hero__advantages-item:nth-child(6) {
+        right: 30%;
+    }
+
+    .hero__advantages-item:nth-child(3) {
+        left: 25%;
+    }
+
+    .hero__advantages-item:nth-child(4) {
+        right: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero__timer-description {
+        display: none;
+    }
+
+    .parallax__img-1, .parallax__img-2 {
+        display: none;
+    }
+
+    .hero__timer-wrapper {
+        flex-direction: column;
+    }
+
+    .hero__timer-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .hero__custom-checkbox {
+        font-size: 10px;
+    }
+
+    .hero__advantages {
+        position: static;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .hero__advantages-item:nth-child(n) {
+        position: static;
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .hero__advantages-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .hero__advantages-text {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .hero__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero__btn {
+        padding: 16px 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__menu {
+        display: none;
+    }
+
+    .hero__container {
+        display: block;
+    }
+
+    .hero__left-btn {
+        display: block;
+    }
+
+    .hero__right-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero__left-btn {
+        top: 300px;
+        left: -23px;
+    }
+
+    .hero__right-btn {
+        top: 300px;
+        right: -23px;
+    }
+}
