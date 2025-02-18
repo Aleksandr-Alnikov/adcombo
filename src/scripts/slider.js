@@ -30,6 +30,8 @@ const showSlide = (i) => {
     handleSize(size);
 };
 
+showSlide(index)
+
 export const launchSlide = () => {
 
     const plusSlide = (i) => {

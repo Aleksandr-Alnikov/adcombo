@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.hero__check-container {
+    display: flex;
+}
+
 .hero__menu-title {
     display: flex;
     align-items: center;
@@ -447,5 +451,9 @@
     .hero__right-btn {
         top: 300px;
         right: -23px;
+    }
+
+    .hero__check-text {
+        font-size: 12px;
     }
 }
